@@ -51,11 +51,9 @@ def add_income(message: types.Message):
 def income_name_step(message: types.Message):
     try:
         chat_id = message.chat.id
-        print(chat_id)
         user_id = message.from_user.id
         income_name = message.text
         income = Income(user_id, income_name)
-        print(income)
         incomes[chat_id] = income
         msg = bot.send_message(message.chat.id, "Введите сумму дохода")
         bot.register_next_step_handler(msg, income_cash_step)
