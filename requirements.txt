@@ -9,7 +9,7 @@ et-xmlfile==1.0.1
 idna==2.8
 jdcal==1.4.1
 kombu==4.6.8
-lxml==4.4.2
+lxml==4.6.2
 Markdown==3.2.1
 openpyxl==3.0.2
 pygame==1.9.6
